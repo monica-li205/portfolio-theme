@@ -27,16 +27,20 @@ defined( 'ABSPATH' ) || exit;
   <div class="img4">
   </div>
   <div class="bottom-nav-buttons">
-    <div class="about-button">
+    <div class="nav-button">
+      <h2>about</h2>
     </div>
-    <div class="contact-button">
+    <div class="nav-button">
+      <h2>contact</h2>
     </div>
   </div>
   </div>
   <div class="top-nav-buttons">
-    <div class="portfolio-button">
+    <div class="nav-button">
+      <h2>portfolio</h2>
     </div>
-    <div class="resume-button">
+    <div class="nav-button">
+      <h2>resume</h2>
     </div>
   </div>
   <footer class="sticky-footer">
