@@ -9,11 +9,13 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
-get_header();
-
 ?>
-
+<main>
+  <div>
+    <h1 class="page-title">MONICA LI</h1>
+  </div>
+</main>
 
 <?php
-get_footer();
+get_header();
+?>

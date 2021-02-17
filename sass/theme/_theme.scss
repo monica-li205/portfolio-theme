@@ -1,1 +1,34 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+$primary: #D8A1B3;
+$secondary: #DBCECE;
+$accent: #FFB8C5;
+$background: #F1F0F0;
+$text_primary: #747474;
+$text_accent: #8d5564;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+.page-title {
+  color: $primary;
+  font-family: 'Fredoka One', cursive;
+}
+
+#wrapper-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: $secondary;
+  #main-nav {
+    ul {
+      li {
+        a {
+          color: $background;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
