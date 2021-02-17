@@ -16,13 +16,11 @@ main {
   line-height: 1.25;
   min-height: 100vh;
   display: grid;
-  
 }
-
 
 .home-container {
   grid-template-columns: 1fr 1fr 1fr 10% 10% 10% 10% 10%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 100px;
   gap: 15px 15px;
   grid-template-areas:
     ". . . . . . . ."
@@ -31,32 +29,101 @@ main {
     "title-container title-container title-container img3 img3 img2 img2 ."
     ". page-description sm-links img3 img3 img4 img4 ."
     ". page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4 ."
+    ". . . . . . . ."
     "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+
   .title-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". page-title page-title"
+      ". page-title page-title";
     grid-area: title-container;
+
     .page-title {
+      grid-area: page-title; 
       color: $primary;
       font-family: 'Fredoka One', cursive;
+      font-size: 5em;
+      letter-spacing: 15;
     }
   }
-  .page-description { grid-area: page-description; }
+
+  .page-description { 
+    grid-area: page-description;
+    background-color: #747474; 
+  }
   
-  .sm-links { grid-area: sm-links; }
+  .sm-links { 
+    grid-area: sm-links; 
+    background-color: #747474;}
   
-  .img1 { grid-area: img1; }
+  .img1 { 
+    grid-area: img1;
+    background-color: #747474;
+  }
   
-  .img2 { grid-area: img2; }
+  .img2 { 
+    grid-area: img2; 
+    background-color: #747474;
+
+  }
   
-  .img3 { grid-area: img3; }
+  .img3 { 
+    grid-area: img3; 
+    background-color: #747474;
+
+  }
   
-  .img4 { grid-area: img4; }
+  .img4 { 
+    grid-area: img4; 
+    background-color: #747474;
+
+  }
   
-  .bottom-nav-buttons { grid-area: bottom-nav-buttons; }
+  .bottom-nav-buttons { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "about about about"
+      "contact contact contact";
+    grid-area: bottom-nav-buttons; 
+    .about-button { 
+      background-color: #8d5564;
+      grid-area: about; 
+    }
+    .contact-button { 
+      background-color: #D8A1B3;
+      grid-area: contact; 
+    }
+  }
   
-  .top-nav-buttons { grid-area: top-nav-buttons; }
+  .top-nav-buttons { 
+    grid-area: top-nav-buttons; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "resume resume resume"
+    "portfolio portfolio portfolio";
+    .portfolio-button { 
+      grid-area: portfolio; 
+      background-color: #D8A1B3;
+    }
+    .resume-button { 
+      grid-area: resume; 
+      background-color: #8d5564;
+    }
+  }
   
   .sticky-footer {
     grid-area: sticky-footer;
+    background-color: #747474;
   }
 }
 
