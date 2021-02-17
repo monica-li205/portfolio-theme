@@ -27,18 +27,18 @@ defined( 'ABSPATH' ) || exit;
   <div class="img4">
   </div>
   <div class="bottom-nav-buttons">
-    <div class="nav-button">
+    <a href="/wordpress/about" class="nav-button">
       <h2>about</h2>
-    </div>
-    <div class="nav-button">
+    </a>
+    <a href="/wordpress/contact" class="nav-button">
       <h2>contact</h2>
-    </div>
+    </a>
   </div>
   </div>
   <div class="top-nav-buttons">
-    <div class="nav-button">
-      <h2>portfolio</h2>
-    </div>
+    <a href="/wordpress/projects" class="nav-button">
+      <h2>projects</h2>
+    </a>
     <div class="nav-button">
       <h2>resume</h2>
     </div>
