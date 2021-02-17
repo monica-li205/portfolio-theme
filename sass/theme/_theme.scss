@@ -6,21 +6,39 @@ $background: #F1F0F0;
 $text_primary: #747474;
 $text_accent: #8d5564;
 
-body {
+html {
+  height: 100vh;
+}
+
+main {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
   line-height: 1.25;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto; 
 }
 
-.page-title {
-  color: $primary;
-  font-family: 'Fredoka One', cursive;
+.sticky-footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+
+.home-container {
+  .title-container {
+    .page-title {
+      color: $primary;
+      font-family: 'Fredoka One', cursive;
+    }
+  }
 }
 
 #wrapper-navbar {
   display: flex;
   justify-content: center;
   background-color: $secondary;
+  height: 100px;
   #main-nav {
     ul {
       li {
