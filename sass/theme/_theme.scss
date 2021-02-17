@@ -7,30 +7,56 @@ $text_primary: #747474;
 $text_accent: #8d5564;
 
 html {
-  height: 100vh;
+  height: 100%;
 }
 
 main {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
   line-height: 1.25;
-  min-height: 100%;
+  min-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr auto; 
-}
-
-.sticky-footer {
-  grid-row-start: 2;
-  grid-row-end: 3;
+  
 }
 
 
 .home-container {
+  grid-template-columns: 1fr 1fr 1fr 10% 10% 10% 10% 10%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+  gap: 15px 15px;
+  grid-template-areas:
+    ". . . . . . . ."
+    ". . . img1 img1 top-nav-buttons top-nav-buttons ."
+    ". . . img1 img1 img2 img2 ."
+    "title-container title-container title-container img3 img3 img2 img2 ."
+    ". page-description sm-links img3 img3 img4 img4 ."
+    ". page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4 ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
   .title-container {
+    grid-area: title-container;
     .page-title {
       color: $primary;
       font-family: 'Fredoka One', cursive;
     }
+  }
+  .page-description { grid-area: page-description; }
+  
+  .sm-links { grid-area: sm-links; }
+  
+  .img1 { grid-area: img1; }
+  
+  .img2 { grid-area: img2; }
+  
+  .img3 { grid-area: img3; }
+  
+  .img4 { grid-area: img4; }
+  
+  .bottom-nav-buttons { grid-area: bottom-nav-buttons; }
+  
+  .top-nav-buttons { grid-area: top-nav-buttons; }
+  
+  .sticky-footer {
+    grid-area: sticky-footer;
   }
 }
 

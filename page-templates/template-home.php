@@ -14,5 +14,7 @@ defined( 'ABSPATH' ) || exit;
   <div class="title-container">
     <h1 class="page-title">MONICA LI</h1>
   </div>
+  <footer  class="sticky-footer"> 
     <?php get_header(); ?>
+  </footer>
 </main>
