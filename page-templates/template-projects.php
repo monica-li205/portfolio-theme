@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
   </div>
   <div class="page-description">
   </div>
-  <footer>
+  <footer class="sticky-footer">
     <?php get_header(); ?>
   </footer>
 </main>

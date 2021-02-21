@@ -6,6 +6,7 @@ $background: #F1F0F0;
 $text_primary: grey;
 $text_accent: #8d5564;
 
+
 html {
   height: 100%;
 }
@@ -14,12 +15,13 @@ main {
   font-family: 'Fredoka One', cursive;
   line-height: 1.25;
   min-height: 100vh;
+  max-height: 100vh;
   display: grid;
 }
 
 .home-container {
   grid-template-columns: 1fr 1fr 1fr 10% 10% 10% 10% 10%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 100px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 80px;
   gap: 1em 2em;
   grid-template-areas:
     ". . . . . . . ."
@@ -34,14 +36,12 @@ main {
   .title-container {
     text-align: end;
     grid-area: title-container;
-
-    .page-title {
-      color: $primary;
-      font-size: 7em;
-      letter-spacing: 15;
     }
-  }
-
+  .page-title {
+    color: $primary;
+    font-size: 7em;
+    letter-spacing: 15;
+    }
   .page-description { 
     grid-area: page-description;
     background-color: $secondary; 
@@ -111,10 +111,134 @@ main {
       }
     }
   }
-  
+    
   .sticky-footer {
     grid-area: sticky-footer;
+    background-color: $secondary;
+  }
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 40% 0.5fr 1fr 10%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2em 80px;
+  gap: 1em 2em;
+  grid-template-areas:
+    ". . . ."
+    ". avatar bio ."
+    "title-container avatar bio-background ."
+    ". avatar skills ."
+    ". . resume-dl ."
+    ". . . ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer";
+  
+  .title-container {
+    text-align: end;
+    grid-area: title-container;
+  }
+  .page-title {
+    color: $primary;
+    font-size: 7em;
+    letter-spacing: 15;
+  }
+  .avatar-container { 
+    grid-area: avatar;
+    display: flex;
+    align-items: center;
+    .avatar-img {
+      border-radius: 10em;
+      background-color: grey;
+      height: 20rem;
+      width: 100%;
+    }
+  }
+  .bio { 
+    grid-area: bio;
     background-color: grey;
+  }
+  
+  .background { 
+    grid-area: bio-background; 
+    background-color: grey;
+  }
+  .skills { 
+    grid-area: skills; 
+    background-color: grey;
+  }
+  .resume-dl {
+    grid-area: resume-dl;
+    display: flex;
+    justify-content: center;
+    .resume-button {
+      background-color: $primary;
+      color: $background;
+      padding: 1.5em;
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+      border-radius: 1.5em;
+      font-size: 1.5em;
+    }
+  }
+  .sticky-footer {
+    grid-area: sticky-footer;
+    background-color: $secondary;
+  }
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 40% 0.5fr 1fr 10%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 2em 80px;
+  gap: 1em 2em;
+  grid-template-areas:
+    ". . . ."
+    ". . contact-form ."
+    "title-container . contact-form ."
+    ". . contact-form ."
+    ". . . ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer";
+  
+  .title-container {
+    text-align: end;
+    grid-area: title-container;
+  }
+  .page-title {
+    color: $primary;
+    font-size: 7em;
+    letter-spacing: 15;
+  }
+  .sticky-footer {
+    grid-area: sticky-footer;
+    background-color: $secondary;
+  }
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 40% 0.5fr 1fr 10%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 2em 80px;
+  gap: 1em 2em;
+  grid-template-areas:
+    ". . . ."
+    ". . contact-form ."
+    "title-container . contact-form ."
+    ". . contact-form ."
+    ". . . ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer";
+  
+  .title-container {
+    text-align: end;
+    grid-area: title-container;
+  }
+  .page-title {
+    color: $primary;
+    font-size: 7em;
+    letter-spacing: 15;
+  }
+  .sticky-footer {
+    grid-area: sticky-footer;
+    background-color: $secondary;
   }
 }
 
@@ -122,7 +246,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: $secondary;
-  height: 100px;
+  height: 80px;
   #main-nav {
     ul {
       li {
