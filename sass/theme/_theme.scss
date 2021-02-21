@@ -283,8 +283,13 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    text-decoration: none;
     .text-button {
       margin: 0.5em;
+      &:hover {
+        text-decoration: none;
+        color: $text_accent;
+      }
     }
   }
     

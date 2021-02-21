@@ -19,12 +19,13 @@ defined( 'ABSPATH' ) || exit;
   <div class="img03"></div>
   <div class="img04"></div>
   <div class="img05"></div>
-  <div class="github-container">
-    <span class="text-button">
+  <a href="https://github.com/monica-li205"
+      class="github-container" target="_blank" rel="noopener">
+      <span class="text-button">
       <i class="fa fa-github icon-button" aria-hidden="true"></i>
       GITHUB
     </span>
-  </div>
+  </a>
   <footer class="sticky-footer">
     <?php get_header(); ?>
   </footer>
