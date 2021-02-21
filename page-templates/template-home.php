@@ -39,7 +39,7 @@ defined( 'ABSPATH' ) || exit;
   </div>
   <div class="top-nav-buttons">
     <a href="/wordpress/projects" class="nav-button">
-      <i class="fa fa-github icon-button" aria-hidden="true"></i>
+      <i class="fa fa-folder-open icon-button" aria-hidden="true"></i>
       <h2>projects</h2>
     </a>
     <a href="https://www.canva.com/design/DAEVBjKqOr8/kUITg8ss9Tf2TOtpIR2KAw/view?utm_content=DAEVBjKqOr8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"

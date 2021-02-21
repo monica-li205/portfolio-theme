@@ -126,20 +126,22 @@ main {
 
 .about-container {
   display: grid;
-  grid-template-columns: 40% 0.5fr 1fr 10%;
+  grid-template-columns: 40% 5% 0.5fr 1fr 10%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2em 80px;
   gap: 1em 2em;
   grid-template-areas:
-    ". . . ."
-    ". avatar bio ."
-    "title-container avatar bio-background ."
-    ". avatar skills ."
-    ". . resume-dl ."
-    ". . . ."
-    "sticky-footer sticky-footer sticky-footer sticky-footer";
+    ". . . . ."
+    ". . avatar bio ."
+    "title-container . avatar bio-background ."
+    "title-container . avatar skills ."
+    ". . . resume-dl ."
+    ". . . . ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
   
   .title-container {
-    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
     grid-area: title-container;
   }
   .page-title {
