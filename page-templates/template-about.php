@@ -21,7 +21,10 @@ defined( 'ABSPATH' ) || exit;
   <div class="background"></div>
   <div class="skills"></div>
   <div class="resume-dl">
-    <div class="text-button">RESUME</div>
+    <span class="text-button">
+      <i class="fa fa-download icon-button" aria-hidden="true"></i>
+      RESUME
+    </span>
   </div>
 
   <footer class="sticky-footer">

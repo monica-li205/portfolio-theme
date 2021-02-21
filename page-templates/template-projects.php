@@ -20,7 +20,10 @@ defined( 'ABSPATH' ) || exit;
   <div class="img04"></div>
   <div class="img05"></div>
   <div class="github-container">
-    <div class="text-button">GITHUB</div>
+    <span class="text-button">
+      <i class="fa fa-github icon-button" aria-hidden="true"></i>
+      GITHUB
+    </span>
   </div>
   <footer class="sticky-footer">
     <?php get_header(); ?>

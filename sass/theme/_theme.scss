@@ -81,12 +81,16 @@ main {
       grid-area: about;
       display: flex;
       align-items: center;
-      padding: 1em;
+      padding: 1em 1em 1em 2em;
       border-radius: 3em;
       margin-bottom: 1em;
       &:hover {
         text-decoration: none;
         color: $text_accent;
+      }
+      .icon-button {
+        font-size: 2em;
+        padding-right: 0.25em;
       }
     }
   }
@@ -100,12 +104,16 @@ main {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      padding: 1em;
+      padding: 1em 2em 1em 1em;
       border-radius: 3em;
       margin-top: 1em;
       &:hover {
         text-decoration: none;
         color: $text_accent;
+      }
+      .icon-button {
+        font-size: 2em;
+        padding-right: 0.25em;
       }
     }
   }
@@ -274,6 +282,7 @@ main {
     grid-area: github-container;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     .text-button {
       margin: 0.5em;
     }
@@ -288,12 +297,19 @@ main {
 .text-button {
   background-color: $primary;
   color: $background;
-  padding: 1.5em;
+  padding: 1.3em;
   width: fit-content;
   height: fit-content;
   text-align: center;
   border-radius: 1.5em;
   font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon-button {
+    font-size: 2em;
+    padding-right: 0.25em;
+  }
 }
 
 #wrapper-navbar {
