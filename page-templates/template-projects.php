@@ -14,7 +14,13 @@ defined( 'ABSPATH' ) || exit;
   <div class="title-container">
     <h1 class="page-title">PROJECTS</h1>
   </div>
-  <div class="page-description">
+  <div class="img01"></div>
+  <div class="img02"></div>
+  <div class="img03"></div>
+  <div class="img04"></div>
+  <div class="img05"></div>
+  <div class="github-container">
+    <div class="text-button">GITHUB</div>
   </div>
   <footer class="sticky-footer">
     <?php get_header(); ?>

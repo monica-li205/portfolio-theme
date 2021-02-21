@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
   <div class="background"></div>
   <div class="skills"></div>
   <div class="resume-dl">
-    <div class="resume-button">RESUME</div>
+    <div class="text-button">RESUME</div>
   </div>
 
   <footer class="sticky-footer">

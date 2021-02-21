@@ -6,7 +6,6 @@ $background: #F1F0F0;
 $text_primary: grey;
 $text_accent: #8d5564;
 
-
 html {
   height: 100%;
 }
@@ -71,7 +70,6 @@ main {
   .img4 { 
     grid-area: img4; 
     background-color: grey;
-
   }
   
   .bottom-nav-buttons { 
@@ -169,16 +167,6 @@ main {
     grid-area: resume-dl;
     display: flex;
     justify-content: center;
-    .resume-button {
-      background-color: $primary;
-      color: $background;
-      padding: 1.5em;
-      width: fit-content;
-      height: fit-content;
-      text-align: center;
-      border-radius: 1.5em;
-      font-size: 1.5em;
-    }
   }
   .sticky-footer {
     grid-area: sticky-footer;
@@ -189,13 +177,14 @@ main {
 .contact-container {
   display: grid;
   grid-template-columns: 40% 0.5fr 1fr 10%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 2em 80px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2em 80px;
   gap: 1em 2em;
   grid-template-areas:
     ". . . ."
     ". . contact-form ."
     "title-container . contact-form ."
     ". . contact-form ."
+    ". . send ."
     ". . . ."
     "sticky-footer sticky-footer sticky-footer sticky-footer";
   
@@ -208,38 +197,103 @@ main {
     font-size: 7em;
     letter-spacing: 15;
   }
+  .sticky-footer {
+    grid-area: sticky-footer;
+    background-color: $secondary;
+  }
+  .send-container {
+    grid-area: send;
+    display: flex;
+    justify-content: center;
+    .send-button {
+      background-color: $primary;
+      color: $background;
+      padding: 0.75em;
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+      border-radius: 1.5em;
+      font-size: 3em;
+    }
+  }
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 40% 5% 1em 1fr 1fr 1fr 5%;
+  grid-template-rows: 10% 1.3fr 0.7fr 1fr 0.7fr 1em 1.5em 80px;
+  gap: 1em 1em;
+  grid-template-areas:
+    ". . . . . . ."
+    ". . img01 img01 img01 img02 ."
+    ". . . img03 img04 img02 ."
+    "title-container . . img03 img04 img05 ."
+    ". . . github-container img04 img05 ."
+    ". . . . . img05 ."
+    ". . . . . . ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+  
+  .title-container {
+    text-align: end;
+    grid-area: title-container;
+    .page-title {
+      color: $primary;
+      font-size: 7em;
+      letter-spacing: 15;
+    }
+  }
+  .img01 { 
+    grid-area: img01;
+    background-color: grey;
+  }
+  
+  .img02 { 
+    grid-area: img02;
+    background-color: grey;
+
+  }
+  
+  .img05 { 
+    grid-area: img05;
+    background-color: grey;
+  }
+  
+  .img04 { 
+    grid-area: img04; 
+    background-color: grey;
+
+  }
+  
+  .img03 { 
+    grid-area: img03; 
+    background-color: grey;
+
+  }
+  
+  .github-container { 
+    grid-area: github-container;
+    display: flex;
+    justify-content: flex-end;
+    .text-button {
+      margin: 0.5em;
+    }
+  }
+    
   .sticky-footer {
     grid-area: sticky-footer;
     background-color: $secondary;
   }
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: 40% 0.5fr 1fr 10%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 2em 80px;
-  gap: 1em 2em;
-  grid-template-areas:
-    ". . . ."
-    ". . contact-form ."
-    "title-container . contact-form ."
-    ". . contact-form ."
-    ". . . ."
-    "sticky-footer sticky-footer sticky-footer sticky-footer";
-  
-  .title-container {
-    text-align: end;
-    grid-area: title-container;
-  }
-  .page-title {
-    color: $primary;
-    font-size: 7em;
-    letter-spacing: 15;
-  }
-  .sticky-footer {
-    grid-area: sticky-footer;
-    background-color: $secondary;
-  }
+.text-button {
+  background-color: $primary;
+  color: $background;
+  padding: 1.5em;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border-radius: 1.5em;
+  font-size: 1.5em;
 }
 
 #wrapper-navbar {

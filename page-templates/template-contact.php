@@ -16,6 +16,11 @@ defined( 'ABSPATH' ) || exit;
   </div>
   <div class="page-description">
   </div>
+  <div class="send-container">
+    <div class="send-button">
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </div>
+  </div>
   <footer class="sticky-footer">
     <?php get_header(); ?>
   </footer>
