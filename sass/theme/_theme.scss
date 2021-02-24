@@ -186,7 +186,7 @@ main {
 
 .contact-container {
   display: grid;
-  grid-template-columns: 40% 0.5fr 1fr 10%;
+  grid-template-columns: 40% 5% 1fr 10%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2em 80px;
   gap: 1em 2em;
   grid-template-areas:
@@ -211,19 +211,38 @@ main {
     grid-area: sticky-footer;
     background-color: $secondary;
   }
-  .send-container {
-    grid-area: send;
+  .contact-form {
+    grid-area: contact-form;
     display: flex;
     justify-content: center;
-    .send-button {
-      background-color: $primary;
-      color: $background;
-      padding: 0.75em;
-      width: fit-content;
+    font-family: 'Poppins';
+    width: 100%;
+    div {
+      color: $text_accent;
+      margin-top: 1em;
+    }
+    textarea {
+      width: 100%;
+    }
+    .send-container {
+      display: flex;
+      justify-content: center;
       height: fit-content;
-      text-align: center;
-      border-radius: 1.5em;
-      font-size: 3em;
+      .send-button {
+        background-color: $primary;
+        color: $background;
+        padding: 0.75em;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        border-radius: 1.5em;
+        font-size: 3em;
+        height: fit-content;
+        border: none;
+        &:hover {
+          color: $text_accent;
+        }
+      }
     }
   }
 }

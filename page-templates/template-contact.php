@@ -14,13 +14,9 @@ defined( 'ABSPATH' ) || exit;
   <div class="title-container">
     <h1 class="page-title">CONTACT</h1>
   </div>
-  <div class="page-description">
-  </div>
-  <div class="send-container">
-    <div class="send-button">
-      <i class="fa fa-arrow-right" aria-hidden="true"></i>
-    </div>
-  </div>
+  <form class="contact-form">
+    <?php echo do_shortcode('[contact-form-7 id="39" title="Inquiries"]'); ?>
+  </form>
   <footer class="sticky-footer">
     <?php get_header(); ?>
   </footer>
