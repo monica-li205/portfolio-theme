@@ -15,16 +15,45 @@ defined( 'ABSPATH' ) || exit;
     <h1 class="page-title">MONICA LI</h1>
   </div>
   <div class="page-description">
+    <p class="home-description">Full-stack web developer with an enthusiasm for front-end development and design. Comes
+      from a background in the medical and dental industry. Passionate about aesthetically pleasing web design and
+      intuitive user interfaces. Experienced working in a fast-paced, high-pressure environment.
+    </p>
   </div>
   <div class="sm-links">
+    <table>
+      <tr>
+        <td>
+          <i class="fa fa-github icon-button" aria-hidden="true"></i>
+          <p>GitHub</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <p>LinkedIn</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <p>Instagram</p>
+        </td>
+      </tr>
+
+    </table>
   </div>
   <div class="img1">
+    image 1
   </div>
   <div class="img2">
+    image 2
   </div>
   <div class="img3">
+    image 3
   </div>
   <div class="img4">
+    image 4
   </div>
   <div class="bottom-nav-buttons">
     <a href="/wordpress/about" class="nav-button">
