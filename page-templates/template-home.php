@@ -15,9 +15,8 @@ defined( 'ABSPATH' ) || exit;
     <h1 class="page-title">MONICA LI</h1>
   </div>
   <div class="page-description">
-    <p class="home-description">Full-stack web developer with an enthusiasm for front-end development and design. Comes
-      from a background in the medical and dental industry. Passionate about aesthetically pleasing web design and
-      intuitive user interfaces. Experienced working in a fast-paced, high-pressure environment.
+    <p class="home-description">Full-stack web developer with an enthusiasm for front-end development and design. Passionate about aesthetically pleasing web design and
+      intuitive user interfaces.
     </p>
   </div>
   <div class="sm-links">
