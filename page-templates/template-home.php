@@ -15,28 +15,48 @@ defined( 'ABSPATH' ) || exit;
     <h1 class="page-title">MONICA LI</h1>
   </div>
   <div class="page-description">
-    <p class="home-description">Full-stack web developer with an enthusiasm for front-end development and design. Passionate about aesthetically pleasing web design and
-      intuitive user interfaces.
+    <p class="home-description">
+      Full-stack web developer with an enthusiasm for front-end development and design.
+      <br>
+      Passionate about aesthetically pleasing web design and intuitive user interfaces.
     </p>
   </div>
   <div class="sm-links">
     <table>
       <tr>
         <td>
-          <i class="fa fa-github icon-button" aria-hidden="true"></i>
-          <p>GitHub</p>
+          <a href="https://github.com/monica-li205" target="_blank" rel="noopener">
+            <div class="link-container">
+              <div class="icon-container">
+                <i class="fa fa-github-alt icon-button" aria-hidden="true"></i>
+              </div>
+              <p>GITHUB</p>
+            </div>
+          </a>
         </td>
       </tr>
       <tr>
         <td>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <p>LinkedIn</p>
+          <a href="https://www.linkedin.com/in/monica-li-035151203/" target="_blank" rel="noopener">
+            <div class="link-container">
+              <div class="icon-container">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </div>
+              <p>LINKEDIN</p>
+            </div>
+          </a>
         </td>
       </tr>
       <tr>
         <td>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-          <p>Instagram</p>
+          <a href="https://www.instagram.com/monili_draws/" target="_blank" rel="noopener">
+            <div class="link-container">
+              <div class="icon-container">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+              <p>INSTAGRAM</p>
+            </div>
+          </a>
         </td>
       </tr>
 
