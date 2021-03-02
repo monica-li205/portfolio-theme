@@ -7,7 +7,7 @@ $text_primary: grey;
 $text_accent: #8d5564;
 
 // media breakpoints
-$xl: 1880px;
+$xl: 1580px;
 $lg: 992px;
 $md: 768px;
 $sm: 576px;
@@ -30,7 +30,7 @@ main {
 }
 
   .home-container {
-    grid-template-columns: 1fr 20% 11% 10% 10% 10% 10% 10%;
+    grid-template-columns: 1fr 20% 15% 10% 10% 10% 10% 10%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 80px;
     gap: 1em 1em;
     grid-template-areas:
@@ -38,11 +38,26 @@ main {
       ". . . img1 img1 top-nav-buttons top-nav-buttons ."
       ". . . img1 img1 img2 img2 ."
       "title-container title-container title-container img3 img3 img2 img2 ."
-      ". page-description sm-links img3 img3 img4 img4 ."
-      ". page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4 ."
+      "page-description page-description sm-links img3 img3 img4 img4 ."
+      "page-description page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4 ."
       ". . . . . . . ."
       "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
-      @media (min-width: 769px) and (max-width: $lg)  {
+      @media (min-width: $lg) and (max-width: $xl) {
+        grid-template-columns: 1fr 20% 10% 10% 10% 10%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 80px;
+        gap: 1em 1em;
+        grid-template-areas:
+          ". . . . . ."
+          ". . img1 img1 top-nav-buttons top-nav-buttons"
+          ". . img1 img1 img2 img2"
+          "title-container title-container img3 img3 img2 img2"
+          "page-description sm-links img3 img3 img4 img4"
+          "page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4"
+          ". . . . . ."
+          "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+      }
+      
+      @media (max-width: $lg)  {
         width: 100%;
         display: grid;
         grid-template-columns: 5% 1fr 1fr 1fr 5%;
@@ -78,7 +93,7 @@ main {
       .title-container {
         text-align: end;
         grid-area: title-container;
-        @media (min-width: 769px) and (max-width: $lg) {
+        @media (max-width: $lg) {
           text-align: center;
           padding: 3em 0 3em 0;
         }
@@ -102,7 +117,9 @@ main {
 
       .page-description { 
         grid-area: page-description;
-        @media (min-width: 769px) and (max-width: $lg) {
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: $lg) {
           padding: 0em 1em 0 0;
         }
         @media (max-width: $md) {
@@ -113,7 +130,13 @@ main {
           font-family: 'Poppins';
           color: $text_primary;
           font-size: 1.25em;
-          @media (min-width: 769px) and (max-width: $lg) {
+          width: 16vw;
+          @media (min-width: $lg) and (max-width: $xl) {
+            padding-left: 0em;
+            width: 25vw;
+          }
+          @media (max-width: $lg) {
+            width: 100%;
             margin: 0;
           }
           @media (max-width: $md) {
@@ -127,7 +150,7 @@ main {
       
       .sm-links { 
         grid-area: sm-links;
-        padding: 0em 0em 0em 0em;
+        padding: 0em 1em 0em 0em;
         td {
           font-size: 1.2em;
           color: $accent;
@@ -193,7 +216,7 @@ main {
       .img1 { 
         grid-area: img1;
         background-color: grey;
-        @media (min-width: 769px) and (max-width: $lg) {
+        @media (max-width: $lg) {
           margin: 0em 0.5em 0.5em 0em;
         }
       }
@@ -201,7 +224,7 @@ main {
       .img2 { 
         grid-area: img2; 
         background-color: grey;
-        @media (min-width: 769px) and (max-width: $lg) {
+        @media (max-width: $lg) {
           margin: 0em 0em 0.5em 0.5em;
         }
       }
@@ -209,7 +232,7 @@ main {
       .img3 { 
         grid-area: img3; 
         background-color: grey;
-        @media (min-width: 769px) and (max-width: $lg) {
+        @media (max-width: $lg) {
           margin: 0.5em 0.5em 0em 0em;
         }
       }
@@ -217,7 +240,7 @@ main {
       .img4 { 
         grid-area: img4; 
         background-color: grey;
-        @media (min-width: 769px) and (max-width: $lg) {
+        @media (max-width: $lg) {
           margin: 0.5em 0em 0em 0.5em;
         }
       }
@@ -240,7 +263,7 @@ main {
           padding: 1em 1em 1em 2em;
           border-radius: 3em;
           margin-bottom: 1em;
-          @media (min-width: 769px) and (max-width: $lg) {
+          @media (max-width: $lg) {
             margin: 0.5em 0.5em 0.5em 0em;
           }
           @media (max-width: $md) {
@@ -257,7 +280,7 @@ main {
           .icon-button {
             font-size: 2em;
             padding-right: 0.25em;
-            @media (min-width: 769px) and (max-width: $lg) {
+            @media (max-width: $lg) {
               padding-right: 0.5em;
             }
             @media (max-width: $md) {
@@ -292,7 +315,7 @@ main {
           padding: 1em 2em 1em 1em;
           border-radius: 3em;
           margin-top: 1em;
-          @media (min-width: 769px) and (max-width: $lg) {
+          @media (max-width: $lg) {
             margin: 0em 0em 0.5em 0.5em;
           }
           @media (max-width: $md) {
@@ -309,7 +332,7 @@ main {
           .icon-button {
             font-size: 2em;
             padding-right: 0.25em;
-            @media (min-width: 769px) and (max-width: $lg) {
+            @media (max-width: $lg) {
               padding-right: 0.5em;
             }
             @media (max-width: $md) {
