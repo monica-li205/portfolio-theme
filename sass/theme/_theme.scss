@@ -43,18 +43,18 @@ main {
       ". . . . . . . ."
       "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
       @media (min-width: $lg) and (max-width: $xl) {
-        grid-template-columns: 1fr 20% 10% 10% 10% 10%;
+        grid-template-columns: 1fr 20% 10% 10% 10% 10% 1rem;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 80px;
         gap: 1em 1em;
         grid-template-areas:
-          ". . . . . ."
-          ". . img1 img1 top-nav-buttons top-nav-buttons"
-          ". . img1 img1 img2 img2"
-          "title-container title-container img3 img3 img2 img2"
-          "page-description sm-links img3 img3 img4 img4"
-          "page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4"
-          ". . . . . ."
-          "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+          ". . . . . . ."
+          ". . img1 img1 top-nav-buttons top-nav-buttons ."
+          ". . img1 img1 img2 img2 ."
+          "title-container title-container img3 img3 img2 img2 ."
+          "page-description sm-links img3 img3 img4 img4 ."
+          "page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4 ."
+          ". . . . . . ."
+          "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
       }
       
       @media (max-width: $lg)  {
@@ -219,6 +219,9 @@ main {
         @media (max-width: $lg) {
           margin: 0em 0.5em 0.5em 0em;
         }
+        @media (max-width: $md) {
+          margin: 0em 0em 0em 0em;
+        }
       }
       
       .img2 { 
@@ -226,6 +229,9 @@ main {
         background-color: grey;
         @media (max-width: $lg) {
           margin: 0em 0em 0.5em 0.5em;
+        }
+        @media (max-width: $md) {
+          margin: 0em 0em 0em 0em;
         }
       }
       
@@ -235,6 +241,9 @@ main {
         @media (max-width: $lg) {
           margin: 0.5em 0.5em 0em 0em;
         }
+        @media (max-width: $md) {
+          margin: 0em 0em 0em 0em;
+        }
       }
       
       .img4 { 
@@ -242,6 +251,9 @@ main {
         background-color: grey;
         @media (max-width: $lg) {
           margin: 0.5em 0em 0em 0.5em;
+        }
+        @media (max-width: $md) {
+          margin: 0em 0em 0em 0em;
         }
       }
       
@@ -253,7 +265,7 @@ main {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 0.5em 0.5em 0.5em 0.5em;
+          padding: 0.5em 0.5em 0.5em 1em;
         }
         .nav-button {
           background-color: $primary;
@@ -304,7 +316,7 @@ main {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 0.5em 0.5em 0.5em 0.5em;
+          padding: 0.5em 1em 0.5em 0.5em;
         }
         .nav-button {
           background-color: $primary;
