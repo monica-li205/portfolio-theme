@@ -7,7 +7,7 @@ $text_primary: grey;
 $text_accent: #8d5564;
 
 // media breakpoints
-$xl: 1440px;
+$xl: 1880px;
 $lg: 992px;
 $md: 768px;
 $sm: 576px;
@@ -42,6 +42,22 @@ main {
       ". page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4 ."
       ". . . . . . . ."
       "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+      @media (min-width: 769px) and (max-width: $lg)  {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 80px;
+        gap: 0px 0px;
+        grid-template-areas:
+          ". title-container title-container title-container ."
+          ". page-description img1 top-nav-buttons ."
+          ". page-description img1 img2 ."
+          ". sm-links img3 img2 ."
+          ". sm-links img3 img4 ."
+          ". sm-links bottom-nav-buttons img4 ."
+          ". . . . ."
+          "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+      }
       @media (max-width: $md) {
         width: 100%;
         display: grid;
@@ -58,11 +74,14 @@ main {
           "img3 img3"
           "img4 img4"
           "sm-links sm-links";
-      }
-
+        }
       .title-container {
         text-align: end;
         grid-area: title-container;
+        @media (min-width: 769px) and (max-width: $lg) {
+          text-align: center;
+          padding: 3em 0 3em 0;
+        }
         @media (max-width: $md) {
           display: flex;
           align-items: center;
@@ -80,8 +99,12 @@ main {
           }
         }
       }
+
       .page-description { 
         grid-area: page-description;
+        @media (min-width: 769px) and (max-width: $lg) {
+          padding: 0em 1em 0 0;
+        }
         @media (max-width: $md) {
           display: flex;    
           align-items: center;
@@ -90,6 +113,9 @@ main {
           font-family: 'Poppins';
           color: $text_primary;
           font-size: 1.25em;
+          @media (min-width: 769px) and (max-width: $lg) {
+            margin: 0;
+          }
           @media (max-width: $md) {
             font-size: x-large;
             width: 100vw;
@@ -167,27 +193,45 @@ main {
       .img1 { 
         grid-area: img1;
         background-color: grey;
+        @media (min-width: 769px) and (max-width: $lg) {
+          margin: 0em 0.5em 0.5em 0em;
+        }
       }
       
       .img2 { 
         grid-area: img2; 
         background-color: grey;
-
+        @media (min-width: 769px) and (max-width: $lg) {
+          margin: 0em 0em 0.5em 0.5em;
+        }
       }
       
       .img3 { 
         grid-area: img3; 
         background-color: grey;
-
+        @media (min-width: 769px) and (max-width: $lg) {
+          margin: 0.5em 0.5em 0em 0em;
+        }
       }
       
       .img4 { 
         grid-area: img4; 
         background-color: grey;
+        @media (min-width: 769px) and (max-width: $lg) {
+          margin: 0.5em 0em 0em 0.5em;
+        }
       }
       
       .bottom-nav-buttons { 
         grid-area: bottom-nav-buttons;
+        @media (max-width: $md) {
+          grid-area: nav-buttons1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0.5em 0.5em 0.5em 0.5em;
+        }
         .nav-button {
           background-color: $primary;
           color: $background;
@@ -196,6 +240,9 @@ main {
           padding: 1em 1em 1em 2em;
           border-radius: 3em;
           margin-bottom: 1em;
+          @media (min-width: 769px) and (max-width: $lg) {
+            margin: 0.5em 0.5em 0.5em 0em;
+          }
           @media (max-width: $md) {
             margin: 0em 0em 0.5em 0em;
             padding: 0.75em 0.5em 0.75em 0.5em;
@@ -204,12 +251,15 @@ main {
           }
           &:hover {
             text-decoration: none;
-            color: $text_accent;
+            color: $primary;
             background-color: $secondary;
           }
           .icon-button {
             font-size: 2em;
             padding-right: 0.25em;
+            @media (min-width: 769px) and (max-width: $lg) {
+              padding-right: 0.5em;
+            }
             @media (max-width: $md) {
               font-size: 1.25em;
             }
@@ -220,15 +270,6 @@ main {
               font-size: x-large;
             }
           }
-
-        }
-        @media (max-width: $md) {
-          grid-area: nav-buttons1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 0.5em 0.5em 0.5em 0.5em;
         }
       }
       
@@ -251,6 +292,9 @@ main {
           padding: 1em 2em 1em 1em;
           border-radius: 3em;
           margin-top: 1em;
+          @media (min-width: 769px) and (max-width: $lg) {
+            margin: 0em 0em 0.5em 0.5em;
+          }
           @media (max-width: $md) {
             margin: 0em 0em 0.5em 0em;
             padding: 0.75em 0.5em 0.75em 0.5em;
@@ -259,11 +303,15 @@ main {
           }
           &:hover {
             text-decoration: none;
-            color: $text_accent;
+            color: $primary;
+            background-color: $secondary;
           }
           .icon-button {
             font-size: 2em;
             padding-right: 0.25em;
+            @media (min-width: 769px) and (max-width: $lg) {
+              padding-right: 0.5em;
+            }
             @media (max-width: $md) {
               font-size: 1.25em;
             }
@@ -503,9 +551,6 @@ main {
   justify-content: center;
   background-color: $secondary;
   height: 80px;
-  @media (max-width: $md) {
-    justify-content: flex-start;
-  }
   #main-nav {
     ul {
       li {
@@ -513,9 +558,6 @@ main {
           color: $background;
           font-weight: 600;
           font-size: 3em;
-          @media (max-width: $md) {
-            font-size: 2em;
-          }
         }
       }
     }
