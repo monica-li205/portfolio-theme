@@ -39,6 +39,18 @@
         "skills"
         "resume-dl";
     }
+
+  h2 {
+    font-family: "Poppins";
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 3;
+    margin: 0;
+  }
+  p {
+    font-family: "Poppins";
+  }
+
   .title-container {
     display: flex;
     align-items: center;
@@ -74,24 +86,54 @@
       padding: 0 1em 0 1em;
     }
     .avatar-img {
-      border-radius: 10em;
       background-color: grey;
       height: 20rem;
       width: 350px;
+      img {
+        border-radius: 10em;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        object-fit: cover;
+      }
     }
   }
   .bio { 
     grid-area: bio;
-    background-color: grey;
+    background-color: rgb(224, 224, 224);
+    border-radius: 0 1.5em 1.5em 0em;
+    padding: 1em;
+    h2 {
+      color: $primary;
+    }
+    p {
+      color: rgb(160, 160, 160);
+    }
   }
   
   .background { 
     grid-area: bio-background; 
-    background-color: grey;
+    background-color: rgb(189, 189, 189);
+    border-radius: 0 1.5em 1.5em 0em;
+    padding: 1em;
+    h2 {
+      color: rgb(186, 112, 143);
+    }
+    p {
+      color: rgb(124, 124, 124);
+    }
   }
   .skills { 
     grid-area: skills; 
-    background-color: grey;
+    background-color: rgb(146, 146, 146);
+    border-radius: 0 1.5em 1.5em 0em;
+    padding: 1em;
+    h2 {
+      color: $text_accent;
+    }
+    p {
+      color: #655858;
+    }
   }
   .resume-dl {
     grid-area: resume-dl;

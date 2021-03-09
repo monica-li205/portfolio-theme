@@ -15,11 +15,22 @@ defined( 'ABSPATH' ) || exit;
     <h1 class="page-title">ABOUT</h1>
   </div>
   <div class="avatar-container">
-    <div class="avatar-img"></div>
+    <div class="avatar-img">
+      <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/avatar.jpg" alt="avatar">
+    </div>
   </div>
-  <div class="bio"></div>
-  <div class="background"></div>
-  <div class="skills"></div>
+  <div class="bio">
+    <h2>WHO AM I?</h2>
+    <p>i am a cat meow</p>
+  </div>
+  <div class="background">
+    <h2>BACKGROUND</h2>
+    <p>i am an ex-dental hygienist</p>
+  </div>
+  <div class="skills">
+    <h2>SKILLS</h2>
+    <p>not many</p>
+  </div>
   <div class="resume-dl">
     <span class="text-button">
       <i class="fa fa-download icon-button" aria-hidden="true"></i>

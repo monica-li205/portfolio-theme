@@ -197,6 +197,7 @@
       }
       @media (max-width: $md) {
         margin: 0em 0em 0em 0em;
+        border-radius: 0em;
       }
     }
     
@@ -216,6 +217,7 @@
       }
       @media (max-width: $md) {
         margin: 0em 0em 0em 0em;
+        border-radius: 0em;
       }
     }
     
@@ -235,6 +237,7 @@
       }
       @media (max-width: $md) {
         margin: 0em 0em 0em 0em;
+        border-radius: 0em;
       }
     }
     
@@ -254,6 +257,7 @@
       }
       @media (max-width: $md) {
         margin: 0em 0em 0em 0em;
+        border-radius: 0em;
       }
     }
     .img-caption {
@@ -274,13 +278,13 @@
       text-align: center;
       object-fit: cover;
       border-radius: 1em;
-
       &:hover {
         opacity: 0.6;
         transition: 0.5s;
       }
       @media (max-width: $md) {
         max-height: 300px;
+        border-radius: 0em;
       }
     }
     

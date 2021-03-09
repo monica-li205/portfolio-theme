@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
   </div>
   <div class="page-description">
     <p class="animate__animated animate__fadeinleft home-description">
-      Full-stack web developer with an enthusiasm for front-end development and design.
+      A full-stack web developer with an enthusiasm for front-end development and design.
       <br>
       Passionate about aesthetically pleasing web design and intuitive user interfaces.
     </p>
