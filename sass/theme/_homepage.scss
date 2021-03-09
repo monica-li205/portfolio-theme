@@ -1,0 +1,345 @@
+.home-container {
+  grid-template-columns: 1fr 20% 15% 10% 10% 10% 10% 10%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 80px;
+  gap: 1em 1em;
+  grid-template-areas:
+    ". . . . . . . ."
+    ". . . img1 img1 top-nav-buttons top-nav-buttons ."
+    ". . . img1 img1 img2 img2 ."
+    "title-container title-container title-container img3 img3 img2 img2 ."
+    "page-description page-description sm-links img3 img3 img4 img4 ."
+    "page-description page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4 ."
+    ". . . . . . . ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+    @media (min-width: $lg) and (max-width: $xl) {
+      grid-template-columns: 1fr 20% 10% 10% 10% 10% 1rem;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 80px;
+      gap: 1em 1em;
+      grid-template-areas:
+        ". . . . . . ."
+        ". . img1 img1 top-nav-buttons top-nav-buttons ."
+        ". . img1 img1 img2 img2 ."
+        "title-container title-container img3 img3 img2 img2 ."
+        "page-description sm-links img3 img3 img4 img4 ."
+        "page-description sm-links bottom-nav-buttons bottom-nav-buttons img4 img4 ."
+        ". . . . . . ."
+        "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+    }
+    
+    @media (max-width: $lg)  {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 5% 1fr 1fr 1fr 5%;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2em 80px;
+      gap: 0px 0px;
+      grid-template-areas:
+        ". title-container title-container title-container ."
+        ". page-description img1 top-nav-buttons ."
+        ". page-description img1 img2 ."
+        ". sm-links img3 img2 ."
+        ". sm-links img3 img4 ."
+        ". sm-links bottom-nav-buttons img4 ."
+        ". . . . ."
+        "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+    }
+    @media (max-width: $md) {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 5% 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "sticky-footer sticky-footer"
+        "title-container title-container"
+        "page-description page-description"
+        "nav-buttons1 nav-buttons2"
+        "img1 img1"
+        "img2 img2"
+        "img3 img3"
+        "img4 img4"
+        "sm-links sm-links";
+      }
+    .title-container {
+      text-align: end;
+      grid-area: title-container;
+      @media (max-width: $lg) {
+        text-align: center;
+        padding: 3em 0 3em 0;
+      }
+      @media (max-width: $md) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .page-title {
+        color: $primary;
+        font-size: 7em;
+        letter-spacing: 15;
+        @media (max-width: $md) {
+          letter-spacing: 0;
+          font-size: 18vw;
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+
+    .page-description { 
+      grid-area: page-description;
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: $lg) {
+        padding: 0em 1em 0 0;
+      }
+      @media (max-width: $md) {
+        display: flex;    
+        align-items: center;
+      }
+      .home-description {
+        font-family: 'Poppins';
+        color: $text_primary;
+        font-size: 1.25em;
+        width: 16vw;
+        @media (min-width: $lg) and (max-width: $xl) {
+          padding-left: 0em;
+          width: 25vw;
+        }
+        @media (max-width: $lg) {
+          width: 100%;
+          margin: 0;
+        }
+        @media (max-width: $md) {
+          font-size: x-large;
+          width: 100vw;
+          padding: 2em 1em 0em 1em;
+          text-align: center;
+        }
+      }
+    }
+    
+    .sm-links { 
+      grid-area: sm-links;
+      padding: 0em 1em 0em 0em;
+      td {
+        font-size: 1.2em;
+        color: $accent;
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0em 0.5em 0em;
+        &:hover {
+          color: white;
+          background-color: $secondary;
+          border-radius: 0em 1em 1em 0em;
+          a {
+            color: white;
+            text-decoration: none;
+            p {
+              letter-spacing: 4;
+            }
+          }
+        }
+        .link-container {
+          display: flex;
+          align-items: center;
+          p {
+            margin: 0;
+            text-decoration: none;
+            letter-spacing: 1.5;
+            padding: 0 1em 0 0.5em;
+          }
+          a {
+            text-decoration: none;
+            margin-bottom: 0%;
+            color: $accent;
+          }
+          .icon-container {
+            background-color: $primary;
+            width: fit-content;
+            padding: 0.5em;
+            border-radius: 1em;
+            text-align: center;
+            margin-left: 0.5em;
+            i {
+              font-size: 1.5em;
+              color: white;
+            }
+          }
+        }
+        @media (max-width: $md) {
+          line-height: 1.2em;
+          width: 100vw;
+          background-color: $secondary;
+          margin: 0.5em 0.5em 0em 0.5em;
+          padding: 0.5em;
+          border-radius: 1.5em 0em 0em 1.5em;
+          p {
+            color: white;
+          }
+          &:hover {
+            border-radius: 1.5em 0em 0em 1.5em;
+          }
+        }
+      }
+    }
+    
+    .img1 { 
+      grid-area: img1;
+      background-color: grey;
+      // min-width: 320px;
+      // padding: 0 0.5em 0.5em 0;
+      // animation-duration: 2.5s;
+      @media (max-width: $lg) {
+        margin: 0em 0.5em 0.5em 0em;
+      }
+      @media (max-width: $md) {
+        margin: 0em 0em 0em 0em;
+      }
+    }
+    
+    .img2 { 
+      grid-area: img2; 
+      background-color: grey;
+      // min-width: 320px;
+      // animation-duration: 2.5s;
+      @media (max-width: $lg) {
+        margin: 0em 0em 0.5em 0.5em;
+      }
+      @media (max-width: $md) {
+        margin: 0em 0em 0em 0em;
+      }
+    }
+    
+    .img3 { 
+      grid-area: img3; 
+      background-color: grey;
+      // min-width: 320px;
+      // animation-duration: 2.5s;
+      @media (max-width: $lg) {
+        margin: 0.5em 0.5em 0em 0em;
+      }
+      @media (max-width: $md) {
+        margin: 0em 0em 0em 0em;
+      }
+    }
+    
+    .img4 { 
+      grid-area: img4; 
+      background-color: grey;
+      // min-width: 320px;
+      // animation-duration: 2.5s;
+      @media (max-width: $lg) {
+        margin: 0.5em 0em 0em 0.5em;
+      }
+      @media (max-width: $md) {
+        margin: 0em 0em 0em 0em;
+      }
+    }
+    
+    .bottom-nav-buttons { 
+      grid-area: bottom-nav-buttons;
+      @media (max-width: $md) {
+        grid-area: nav-buttons1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 0.5em 0.5em 1em;
+      }
+      .nav-button {
+        background-color: $primary;
+        color: $background;
+        display: flex;
+        align-items: center;
+        padding: 1em 1em 1em 2em;
+        border-radius: 3em;
+        margin-bottom: 1em;
+        @media (max-width: $lg) {
+          margin: 0.5em 0.5em 0.5em 0em;
+        }
+        @media (max-width: $md) {
+          margin: 0em 0em 0.5em 0em;
+          padding: 0.75em 0.5em 0.75em 0.5em;
+          width: 100%;
+          justify-content: center;
+        }
+        &:hover {
+          text-decoration: none;
+          color: $primary;
+          background-color: $secondary;
+        }
+        .icon-button {
+          font-size: 2em;
+          padding-right: 0.25em;
+          @media (max-width: $lg) {
+            padding-right: 0.5em;
+          }
+          @media (max-width: $md) {
+            font-size: 1.25em;
+          }
+        }
+        h2 {
+          margin: 0;
+          @media (max-width: $md) {
+            font-size: x-large;
+          }
+        }
+      }
+    }
+    
+    .top-nav-buttons { 
+      grid-area: top-nav-buttons;
+      @media (max-width: $md) {
+        grid-area: nav-buttons2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em 1em 0.5em 0.5em;
+      }
+      .nav-button {
+        background-color: $primary;
+        color: $background;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1em 2em 1em 1em;
+        border-radius: 3em;
+        margin-top: 1em;
+        @media (max-width: $lg) {
+          margin: 0em 0em 0.5em 0.5em;
+        }
+        @media (max-width: $md) {
+          margin: 0em 0em 0.5em 0em;
+          padding: 0.75em 0.5em 0.75em 0.5em;
+          width: 100%;
+          justify-content: center;
+        }
+        &:hover {
+          text-decoration: none;
+          color: $primary;
+          background-color: $secondary;
+        }
+        .icon-button {
+          font-size: 2em;
+          padding-right: 0.25em;
+          @media (max-width: $lg) {
+            padding-right: 0.5em;
+          }
+          @media (max-width: $md) {
+            font-size: 1.25em;
+          }
+        }
+        h2 {
+          margin: 0;
+          @media (max-width: $md) {
+            font-size: x-large;
+          }
+        }
+      }
+    }
+      
+    .sticky-footer {
+      grid-area: sticky-footer;
+      background-color: $secondary;
+    }
+}

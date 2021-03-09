@@ -1,0 +1,72 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: 40% 5% 1em 1fr 1fr 1fr 5%;
+  grid-template-rows: 10% 1.3fr 0.7fr 1fr 0.7fr 1em 1.5em 80px;
+  gap: 1em 1em;
+  grid-template-areas:
+    ". . . . . . ."
+    ". . img01 img01 img01 img02 ."
+    ". . . img03 img04 img02 ."
+    "title-container . . img03 img04 img05 ."
+    ". . . github-container img04 img05 ."
+    ". . . . . img05 ."
+    ". . . . . . ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer sticky-footer";
+  
+  .title-container {
+    text-align: end;
+    grid-area: title-container;
+    .page-title {
+      color: $primary;
+      font-size: 7em;
+      letter-spacing: 15;
+    }
+  }
+  .img01 { 
+    grid-area: img01;
+    background-color: grey;
+  }
+  
+  .img02 { 
+    grid-area: img02;
+    background-color: grey;
+
+  }
+  
+  .img05 { 
+    grid-area: img05;
+    background-color: grey;
+  }
+  
+  .img04 { 
+    grid-area: img04; 
+    background-color: grey;
+
+  }
+  
+  .img03 { 
+    grid-area: img03; 
+    background-color: grey;
+
+  }
+  
+  .github-container { 
+    grid-area: github-container;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    .text-button {
+      margin: 0.5em;
+      &:hover {
+        text-decoration: none;
+        color: $text_accent;
+      }
+    }
+  }
+    
+  .sticky-footer {
+    grid-area: sticky-footer;
+    background-color: $secondary;
+  }
+}

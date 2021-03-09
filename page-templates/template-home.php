@@ -12,10 +12,10 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <main class="home-container">
   <div class="title-container">
-    <h1 class="page-title">MONICA LI</h1>
+    <h1 class="animate__animated animate__fadeindown page-title">MONICA LI</h1>
   </div>
   <div class="page-description">
-    <p class="home-description">
+    <p class="animate__animated animate__fadeinleft home-description">
       Full-stack web developer with an enthusiasm for front-end development and design.
       <br>
       Passionate about aesthetically pleasing web design and intuitive user interfaces.
@@ -26,11 +26,11 @@ defined( 'ABSPATH' ) || exit;
       <tr>
         <td>
           <a href="https://github.com/monica-li205" target="_blank" rel="noopener">
-            <div class="link-container">
+            <div id="link-github" class="link-container">
               <div class="icon-container">
                 <i class="fa fa-github-alt icon-button" aria-hidden="true"></i>
               </div>
-              <p>GITHUB</p>
+              <p class="animate__animated animate__fadeinleft" >GITHUB</p>
             </div>
           </a>
         </td>
@@ -38,11 +38,11 @@ defined( 'ABSPATH' ) || exit;
       <tr>
         <td>
           <a href="https://www.linkedin.com/in/monica-li-035151203/" target="_blank" rel="noopener">
-            <div class="link-container">
+            <div id="link-linkedin" class="link-container">
               <div class="icon-container">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </div>
-              <p>LINKEDIN</p>
+              <p class="animate__animated animate__fadeinleft">LINKEDIN</p>
             </div>
           </a>
         </td>
@@ -50,11 +50,11 @@ defined( 'ABSPATH' ) || exit;
       <tr>
         <td>
           <a href="https://www.instagram.com/monili_draws/" target="_blank" rel="noopener">
-            <div class="link-container">
+            <div id="link-instagram" class="link-container">
               <div class="icon-container">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </div>
-              <p>INSTAGRAM</p>
+              <p class="animate__animated animate__fadeinleft">INSTAGRAM</p>
             </div>
           </a>
         </td>

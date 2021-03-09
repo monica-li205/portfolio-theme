@@ -1,0 +1,105 @@
+.about-container {
+  display: grid;
+  grid-template-columns: 40% 0.5fr 1fr 10%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2em 80px;
+  gap: 1em 1em;
+  grid-template-areas:
+    ". . . ."
+    "title-container avatar bio ."
+    "title-container avatar bio-background ."
+    "title-container avatar skills ."
+    ". . resume-dl ."
+    ". . . ."
+    "sticky-footer sticky-footer sticky-footer sticky-footer";
+    @media (max-width: $lg)  {
+      display: grid;
+      grid-template-columns: 40% 1fr 5%;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2em 80px;
+      gap: 1em 1em;
+      grid-template-areas:
+        ". . ."
+        "title-container bio ."
+        "avatar bio-background ."
+        "avatar skills ."
+        ". resume-dl ."
+        ". . ."
+        "sticky-footer sticky-footer sticky-footer";
+    }
+    @media (max-width: $md)  {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 5% 0.5fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 1em 1em;
+      grid-template-areas:
+        "sticky-footer"
+        "title-container"
+        "avatar"
+        "bio"
+        "bio-background"
+        "skills"
+        "resume-dl";
+    }
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    grid-area: title-container;
+    @media (max-width: $lg)  {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    @media (max-width: $md) {
+      justify-content: center;
+      width: initial;
+    }
+  }
+  .page-title {
+    color: $primary;
+    font-size: 7em;
+    letter-spacing: 15;
+    @media (max-width: $lg)  {
+      letter-spacing: 3;
+      font-size: 5em;
+    }
+  }
+  .avatar-container { 
+    grid-area: avatar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $lg)  {
+      padding-left: 1em;
+    }
+    @media (max-width: $md)  {
+      padding: 0 1em 0 1em;
+    }
+    .avatar-img {
+      border-radius: 10em;
+      background-color: grey;
+      height: 20rem;
+      width: 350px;
+    }
+  }
+  .bio { 
+    grid-area: bio;
+    background-color: grey;
+  }
+  
+  .background { 
+    grid-area: bio-background; 
+    background-color: grey;
+  }
+  .skills { 
+    grid-area: skills; 
+    background-color: grey;
+  }
+  .resume-dl {
+    grid-area: resume-dl;
+    display: flex;
+    justify-content: center;
+  }
+  .sticky-footer {
+    grid-area: sticky-footer;
+    background-color: $secondary;
+  }
+}
