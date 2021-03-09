@@ -63,6 +63,9 @@
     @media (max-width: $md) {
       justify-content: center;
       width: initial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   .page-title {
@@ -73,8 +76,14 @@
       letter-spacing: 3;
       font-size: 5em;
     }
+    @media (max-width: $md) {
+      letter-spacing: 0;
+      font-size: 20vw;
+      text-align: center;
+      margin: 0;
+    }
   }
-  .avatar-container { 
+  .avatar-container {
     grid-area: avatar;
     display: flex;
     align-items: center;
@@ -86,7 +95,6 @@
       padding: 0 1em 0 1em;
     }
     .avatar-img {
-      background-color: grey;
       height: 20rem;
       width: 350px;
       img {
@@ -95,6 +103,9 @@
         width: 100%;
         text-align: center;
         object-fit: cover;
+        border-style: double;
+        border-width: 11;
+        color: rgb(180, 219, 219);
       }
     }
   }
@@ -109,6 +120,15 @@
     p {
       color: rgb(160, 160, 160);
     }
+    @media (max-width: $md) {
+      border-radius: 0;
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.5em;
+      }
+    }
   }
   
   .background { 
@@ -122,6 +142,15 @@
     p {
       color: rgb(124, 124, 124);
     }
+    @media (max-width: $md) {
+      border-radius: 0;
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.5em;
+      }
+    }
   }
   .skills { 
     grid-area: skills; 
@@ -133,6 +162,15 @@
     }
     p {
       color: #655858;
+    }
+    @media (max-width: $md) {
+      border-radius: 0;
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.5em;
+      }
     }
   }
   .resume-dl {

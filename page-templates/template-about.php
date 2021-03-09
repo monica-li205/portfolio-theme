@@ -37,7 +37,6 @@ defined( 'ABSPATH' ) || exit;
       RESUME
     </span>
   </div>
-
   <footer class="sticky-footer">
     <?php get_header(); ?>
   </footer>
