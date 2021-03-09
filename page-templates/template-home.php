@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
               <div class="icon-container">
                 <i class="fa fa-github-alt icon-button" aria-hidden="true"></i>
               </div>
-              <p class="animate__animated animate__fadeinleft">GITHUB</p>
+              <p class="animate__animated animate__fadeinleft link-gh">GITHUB</p>
             </div>
           </a>
         </td>
@@ -42,7 +42,7 @@ defined( 'ABSPATH' ) || exit;
               <div class="icon-container">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </div>
-              <p class="animate__animated animate__fadeinleft">LINKEDIN</p>
+              <p class="animate__animated animate__fadeinleft link-li">LINKEDIN</p>
             </div>
           </a>
         </td>
@@ -54,7 +54,7 @@ defined( 'ABSPATH' ) || exit;
               <div class="icon-container">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </div>
-              <p class="animate__animated animate__fadeinleft">INSTAGRAM</p>
+              <p class="animate__animated animate__fadeinleft link-ig">INSTAGRAM</p>
             </div>
           </a>
         </td>
@@ -78,7 +78,7 @@ defined( 'ABSPATH' ) || exit;
     <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/tweeter.png" alt="img4">
     <p class="img-caption">tweeter</p>
   </div>
-  <div class="bottom-nav-buttons">
+  <div class="animate__animated animate__fadeinup bottom-nav-buttons">
     <a href="/wordpress/about" class="nav-button">
       <i class="fa fa-user icon-button" aria-hidden="true"></i>
       <h2>about</h2>
@@ -89,7 +89,7 @@ defined( 'ABSPATH' ) || exit;
     </a>
   </div>
   </div>
-  <div class="top-nav-buttons">
+  <div class="animate__animated animate__fadeinright top-nav-buttons">
     <a href="/wordpress/projects" class="nav-button">
       <i class="fa fa-folder-open icon-button" aria-hidden="true"></i>
       <h2>projects</h2>

@@ -72,6 +72,7 @@
     color: $primary;
     font-size: 7em;
     letter-spacing: 15;
+    animation-duration: 4.5s;
     @media (max-width: $lg)  {
       letter-spacing: 3;
       font-size: 5em;
@@ -114,6 +115,8 @@
     background-color: rgb(224, 224, 224);
     border-radius: 0 1.5em 1.5em 0em;
     padding: 1em;
+    animation-delay: 1s;
+    animation-duration: 3.5s;
     h2 {
       color: $primary;
     }
@@ -136,6 +139,8 @@
     background-color: rgb(189, 189, 189);
     border-radius: 0 1.5em 1.5em 0em;
     padding: 1em;
+    animation-delay: 0.5s;
+    animation-duration: 3.5s;
     h2 {
       color: rgb(186, 112, 143);
     }
@@ -157,6 +162,7 @@
     background-color: rgb(146, 146, 146);
     border-radius: 0 1.5em 1.5em 0em;
     padding: 1em;
+    animation-duration: 3.5s;
     h2 {
       color: $text_accent;
     }
@@ -177,6 +183,7 @@
     grid-area: resume-dl;
     display: flex;
     justify-content: center;
+    animation-duration: 3.5s;
   }
   .sticky-footer {
     grid-area: sticky-footer;
