@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
               <div class="icon-container">
                 <i class="fa fa-github-alt icon-button" aria-hidden="true"></i>
               </div>
-              <p class="animate__animated animate__fadeinleft" >GITHUB</p>
+              <p class="animate__animated animate__fadeinleft">GITHUB</p>
             </div>
           </a>
         </td>
@@ -63,16 +63,20 @@ defined( 'ABSPATH' ) || exit;
     </table>
   </div>
   <div class="img1">
-    image 1
+    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/meowtivate.png" alt="img1">
+    <p class="img-caption">meowtivate</p>
   </div>
   <div class="img2">
-    image 2
+    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/scheduler.png" alt="img2">
+    <p class="img-caption">inPINity</p>
   </div>
   <div class="img3">
-    image 3
+    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/tweeter-crop.png" alt="img2">
+    <p class="img-caption">scheduler</p>
   </div>
   <div class="img4">
-    image 4
+    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/tweeter.png" alt="img4">
+    <p class="img-caption">tweeter</p>
   </div>
   <div class="bottom-nav-buttons">
     <a href="/wordpress/about" class="nav-button">
