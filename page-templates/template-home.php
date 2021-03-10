@@ -20,6 +20,7 @@ defined( 'ABSPATH' ) || exit;
       <br>
       Passionate about aesthetically pleasing web design and intuitive user interfaces.
     </p>
+    <p id="home-alert">WEBSITE UNDER CONSTRUCTION!</p>
   </div>
   <div class="sm-links">
     <table>
@@ -59,23 +60,22 @@ defined( 'ABSPATH' ) || exit;
           </a>
         </td>
       </tr>
-
     </table>
   </div>
   <div class="img1">
-    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/meowtivate.png" alt="img1">
+    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/meowtivate-welcome-thumb.png" alt="img1">
     <p class="img-caption">meowtivate</p>
   </div>
   <div class="img2">
-    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/scheduler.png" alt="img2">
+    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/inpinity-thumb.png" alt="img2">
     <p class="img-caption">inPINity</p>
   </div>
   <div class="img3">
-    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/tweeter-crop.png" alt="img2">
+    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/scheduler-thumb.png" alt="img2">
     <p class="img-caption">scheduler</p>
   </div>
   <div class="img4">
-    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/tweeter.png" alt="img4">
+    <img src="https://ml-portfolio.s3-us-west-2.amazonaws.com/tweeter-home-thumb.png" alt="img4">
     <p class="img-caption">tweeter</p>
   </div>
   <div class="animate__animated animate__fadeinup bottom-nav-buttons">

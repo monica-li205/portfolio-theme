@@ -75,7 +75,7 @@
         color: $primary;
         font-size: 7em;
         letter-spacing: 15;
-        animation-duration: 4.5s;
+        animation-duration: 4s;
         @media (max-width: $md) {
           letter-spacing: 0;
           font-size: 18vw;
@@ -87,14 +87,27 @@
 
     .page-description { 
       grid-area: page-description;
-      display: flex;
+      display: inline-grid;
       justify-content: flex-end;
+      height: fit-content;
+      #home-alert {
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: indianred;
+        letter-spacing: 2;
+        font-size: 1em;
+        @media (max-width: $md) {
+          font-size: 1.6em;
+          text-align: center;
+        }
+      }
       @media (max-width: $lg) {
         padding: 0em 1em 0 0;
       }
       @media (max-width: $md) {
         display: flex;    
         align-items: center;
+        flex-direction: column;
       }
       .home-description {
         font-family: 'Poppins';
@@ -102,7 +115,7 @@
         font-size: 1.25em;
         width: 16vw;
         animation-delay: 0.5s;
-        animation-duration: 4s;
+        animation-duration: 3.5s;
         @media (min-width: $lg) and (max-width: $xl) {
           padding-left: 0em;
           width: 25vw;
@@ -237,7 +250,7 @@
         border-radius: 0em;
       }
     }
-    
+
     .img3 { 
       grid-area: img3; 
       background-color: black;
@@ -364,7 +377,7 @@
     .top-nav-buttons { 
       grid-area: top-nav-buttons;
       animation-delay: 400ms;
-      animation-duration: 4s;
+      animation-duration: 3s;
       @media (max-width: $md) {
         grid-area: nav-buttons2;
         display: flex;
